@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f0e8">
+  <title>LocalEASE — Your city, in good hands.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+<script src="locale.js" defer></script></head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#" aria-label="LocalEASE home"><span class="logo-mark"><i></i><i></i><i></i></span>local<span>EASE</span></a>
+    <div class="top-note"><span class="live-dot"></span> GOOD HELP, CLOSE BY <span class="slash">/</span> JAIPUR EDITION</div>
+    <label class="language-picker" aria-label="Choose language"><span>文</span><select id="languageSelect" aria-label="Choose language"><option value="en">English</option><option value="hi">हिन्दी</option></select></label>
+    <nav class="home-auth-links" aria-label="Account navigation"><a href="login.html">Log in ↗</a><a href="professional-register.html">For professionals</a></nav>
+    <button class="menu-button" id="menuButton" aria-label="Open menu"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="eyebrow-index">01</span> THE NEIGHBOURHOOD, RECONNECTED</p>
+        <h1 class="hero-title reveal">Life happens.<br><span class="title-line">We've got</span> <span class="scribble-word">people.</span></h1>
+        <p class="hero-sub reveal">The right local expert can turn a long day around. Find the people who make your everyday work beautifully.</p>
+        <div class="search-wrap reveal">
+          <span class="search-icon">↗</span>
+          <input id="searchInput" type="search" placeholder="What needs fixing today?" aria-label="Search for a service">
+          <button id="searchButton" class="search-button">Find my person <span>↗</span></button>
+        </div>
+        <div class="popular reveal"><span>START HERE</span><button data-query="Plumber">Plumber</button><button data-query="Electrician">Electrician</button><button data-query="Appliance">Appliance repair</button></div>
+        <div class="hero-foot reveal"><span class="foot-star">✳</span><span>LOCAL KNOW-HOW. HUMAN TRUST.</span><span class="foot-rule"></span><span>01 — 04</span></div>
+      </div>
+
+      <div class="hero-art" id="heroArt" aria-label="Animated abstract illustration of a connected neighborhood">
+        <div class="art-caption caption-top">A LITTLE CLOSER<br>TO HOME <span>↘</span></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <svg class="connection-lines" viewBox="0 0 560 600" role="img" aria-label="Lines connecting neighborhood helpers">
+          <path d="M95 135 C190 65 280 135 290 240 S400 330 470 210"/>
+          <path d="M100 410 C170 320 260 420 320 390 S390 470 475 460"/>
+          <path d="M290 240 C240 310 200 320 100 410"/>
+          <path d="M290 240 C370 190 395 110 455 105"/>
+        </svg>
+        <div class="sun-disc"></div>
+        <div class="art-building building-a"><span class="window-grid"></span><span class="building-label">HOME / 04</span></div>
+        <div class="art-building building-b"><span class="window-grid"></span></div>
+        <div class="art-building building-c"><span class="window-grid"></span></div>
+        <div class="art-plant plant-a"><i></i><i></i><i></i><b></b></div>
+        <div class="art-plant plant-b"><i></i><i></i><i></i><b></b></div>
+        <button class="float-pin pin-plumber" data-service="Plumber" aria-label="Explore plumbing services"><span class="pin-icon">⌁</span><span><b>Plumbing</b><small>THE FIXERS</small></span><em>↗</em></button>
+        <button class="float-pin pin-electric" data-service="Electrician" aria-label="Explore electricians"><span class="pin-icon">ϟ</span><span><b>Electrical</b><small>THE SPARKS</small></span><em>↗</em></button>
+        <button class="float-pin pin-home" data-service="Appliance" aria-label="Explore appliance repair"><span class="pin-icon">◌</span><span><b>Home care</b><small>THE MAKERS</small></span><em>↗</em></button>
+        <div class="map-node node-one"></div><div class="map-node node-two"></div><div class="map-node node-three"></div>
+        <div class="art-stamp">GOOD<br>THINGS<br>HAPPEN<br><span>NEARBY.</span></div>
+        <div class="art-caption caption-bottom"><span class="caption-dot"></span> YOUR CITY IS FULL OF GOOD PEOPLE <span>✳</span></div>
+        <div class="art-coordinates">26° 54' N<br>75° 47' E</div>
+      </div>
+      <div class="vertical-note">MADE FOR THE EVERYDAY / EST. RIGHT HERE</div>
+    </section>
+
+    <section class="ticker" aria-label="LocalEASE values"><div class="ticker-track"><span>GOOD PEOPLE</span><b>✳</b><span>LOCAL SKILL</span><b>✳</b><span>LESS SEARCHING</span><b>✳</b><span>MORE LIVING</span><b>✳</b><span>GOOD PEOPLE</span><b>✳</b><span>LOCAL SKILL</span><b>✳</b><span>LESS SEARCHING</span><b>✳</b><span>MORE LIVING</span><b>✳</b></div></section>
+
+    <section class="services-section" id="services">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span class="eyebrow-index">02</span> WHO DO YOU NEED?</p><h2>Small problem.<br><span>Right person.</span></h2></div>
+        <p class="section-aside">Not a maze of listings.<br>A better way to meet your local experts.</p>
+      </div>
+      <div class="service-constellation" id="serviceConstellation">
+        <button class="service-orb orb-1" data-query="Plumber"><span class="orb-symbol">⌁</span><b>Plumbing</b><small>LEAKS, PIPES, PEACE</small><span class="orb-arrow">↗</span></button>
+        <button class="service-orb orb-2" data-query="Electrician"><span class="orb-symbol">ϟ</span><b>Electrical</b><small>POWER, SAFELY</small><span class="orb-arrow">↗</span></button>
+        <button class="service-orb orb-3" data-query="Appliance"><span class="orb-symbol">◉</span><b>Appliances</b><small>BACK TO WORK</small><span class="orb-arrow">↗</span></button>
+        <button class="service-orb orb-4" data-query="Mechanic"><span class="orb-symbol">✳</span><b>Mechanics</b><small>KEEP IT MOVING</small><span class="orb-arrow">↗</span></button>
+        <button class="service-orb orb-5" data-query="Tutor"><span class="orb-symbol">✎</span><b>Tutors</b><small>ROOM TO GROW</small><span class="orb-arrow">↗</span></button>
+        <button class="service-orb orb-6" data-query="Beautician"><span class="orb-symbol">✿</span><b>Beauty & care</b><small>A LITTLE YOU TIME</small><span class="orb-arrow">↗</span></button>
+        <div class="constellation-center"><span>NEAR<br>YOU</span><i>✳</i></div>
+        <svg class="constellation-lines" viewBox="0 0 1000 560" preserveAspectRatio="none" aria-hidden="true"><path d="M500 280 L160 110 M500 280 L500 95 M500 280 L840 115 M500 280 L180 445 M500 280 L500 465 M500 280 L830 440"/></svg>
+      </div>
+    </section>
+
+    <section class="people-section" id="people">
+      <div class="people-top">
+        <div><p class="eyebrow"><span class="eyebrow-index">03</span> GOOD HANDS, NEARBY</p><h2>Meet your <em>people.</em></h2></div>
+        <div class="people-tools"><label class="filter-label" for="categoryFilter">SHOW ME</label><select id="categoryFilter"><option value="all">Everyone</option><option value="Plumber">Plumbers</option><option value="Electrician">Electricians</option><option value="Appliance">Appliance care</option></select><span class="results-count" id="resultsCount">06 PEOPLE</span></div>
+      </div>
+      <div class="people-grid" id="peopleGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><span>✳</span><h3>No one in this little corner yet.</h3><p>Try another service or a different search.</p><button id="clearSearch">Show everyone ↗</button></div>
+      <p class="directory-note">Directory preview · Jaipur, Rajasthan <span>Listings and ratings should be verified before launch.</span></p>
+    </section>
+
+    <section class="manifesto">
+      <div class="manifesto-mark">✳</div>
+      <p class="eyebrow">A BETTER KIND OF LOCAL</p>
+      <h2>Less hunting.<br><span>More living.</span></h2>
+      <p>Because the best technology doesn't get between people. It brings the right ones together.</p>
+      <button class="manifesto-cta" id="backToSearch">Find your person <span>↗</span></button>
+      <div class="manifesto-doodle doodle-left">✳</div><div class="manifesto-doodle doodle-right">⌁</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="wordmark" href="#"><span class="logo-mark"><i></i><i></i><i></i></span>local<span>EASE</span></a>
+    <span>GOOD HELP, CLOSE BY.</span><span>JAIPUR · INDIA</span><span>© LOCALEASE 2026</span>
+  </footer>
+
+  <div class="modal-backdrop" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="booking-modal">
+      <button class="modal-close" id="closeModal" aria-label="Close dialog">×</button>
+      <p class="eyebrow">LET'S GET THIS SORTED</p><div class="modal-symbol" id="modalSymbol">✳</div>
+      <h2 id="modalTitle">Meet your person.</h2><p class="modal-description" id="modalDescription">A few details, and you're on your way.</p>
+      <form id="bookingForm">
+        <label>Your name<input name="customerName" required placeholder="What should we call you?"></label>
+        <label>What do you need?<textarea name="need" required rows="3" placeholder="Tell us a little about the job…"></textarea></label>
+        <label>Preferred day<input name="date" type="date" id="bookingDate"></label>
+        <button class="search-button modal-submit" type="submit">Request a callback <span>↗</span></button>
+      </form>
+      <p class="demo-note">Demo request only — this won't contact the provider yet.</p>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
